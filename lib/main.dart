@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shaghf/features/authentication_screen/presentation/views/login_page.dart';
-import 'package:shaghf/features/splash_screen/presentation/view/OnboardingView.dart';
-import 'package:shaghf/features/splash_screen/presentation/view/splashScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,13 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      theme: ThemeData.light(),
-      routes: {
-         "s1":(context)=> const OnboardingView(),
-         "auth":(context)=>const HomePage(),
-      },
-      home: const Splashscreen(),
+    return const MaterialApp(
+      home: HomePage(),
     );
   }
 }
