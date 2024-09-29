@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:shaghf/core/utils/app_router.dart';
+import 'package:shaghf/features/authentication_screen/presentation/views/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routerConfig: AppRouter.router,
+    return const MaterialApp(
+      home: HomePage(),
     );
   }
 }
