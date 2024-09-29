@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
-class TextformWidget extends StatelessWidget {
-  const TextformWidget({super.key});
+class SignupTextformfieldWidget extends StatelessWidget {
+  const SignupTextformfieldWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: 342,
-      height: 345,
+      height: 510,
       decoration: BoxDecoration(
           color: Color(0xfffde9bd), borderRadius: BorderRadius.circular(20)),
       child: Column(
@@ -37,6 +38,27 @@ class TextformWidget extends StatelessWidget {
           Padding(
             padding:
                 const EdgeInsets.only(left: 9, right: 10, top: 15, bottom: 10),
+            child: Text(
+              "User Name",
+              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 9, right: 10),
+            child: TextFormField(
+              keyboardType: TextInputType.phone,
+              decoration: InputDecoration(
+                  fillColor: Colors.white,
+                  filled: true,
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  hintText: "Enter User Name",
+                  prefixIcon: Icon(Icons.person_2_outlined)),
+            ),
+          ),
+          Padding(
+            padding:
+                const EdgeInsets.only(left: 9, right: 10, top: 15, bottom: 10),
             child: Text("Password",
                 style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400)),
           ),
@@ -53,19 +75,29 @@ class TextformWidget extends StatelessWidget {
                   prefixIcon: Icon(Icons.lock)),
             ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(right: 10),
-                child: Text("Forget Password?"),
-              ),
-            ],
+          Padding(
+            padding:
+                const EdgeInsets.only(left: 9, right: 10, top: 15, bottom: 10),
+            child: Text("Confirm Password",
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400)),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 9, right: 10),
+            child: TextFormField(
+              keyboardType: TextInputType.phone,
+              decoration: InputDecoration(
+                  fillColor: Colors.white,
+                  filled: true,
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  hintText: "Confirm Password",
+                  prefixIcon: Icon(Icons.lock)),
+            ),
           ),
           Container(
             alignment: Alignment.center,
             child: Text(
-              "LOGIN",
+              "SIGN UP",
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 14,
@@ -83,10 +115,15 @@ class TextformWidget extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Don’t have an account?"),
-                Text(
-                  " Sign up",
-                  style: TextStyle(color: Color(0xffF04C29)),
+                Text("Already  have an account? "),
+                InkWell(
+                  onTap: () {
+                    GoRouter.of(context).pop();
+                  },
+                  child: Text(
+                    "Log In",
+                    style: TextStyle(color: Color(0xffF04C29)),
+                  ),
                 )
               ],
             ),

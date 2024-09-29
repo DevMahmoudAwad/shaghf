@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:shaghf/core/widgets/image_widget.dart';
-import 'package:shaghf/features/authentication_screen/presentation/views/widgets/login_widgets/textform_widget.dart';
+import 'package:shaghf/features/authentication_screen/presentation/views/widgets/verification_widgets/verification_textform_widget.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class VerificationPage extends StatelessWidget {
+  const VerificationPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class LoginPage extends StatelessWidget {
           SizedBox(
             height: 32,
           ),
-          TextformWidget(),
+          VerificationTextformWidget()
         ],
       ),
     );
