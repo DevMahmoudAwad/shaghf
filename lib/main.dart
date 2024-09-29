@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shaghf/features/authentication_screen/presentation/views/login_page.dart';
+import 'package:shaghf/features/splash_screen/presentation/view/splashScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomePage(),
+      home: Splashscreen(),
     );
   }
 }
