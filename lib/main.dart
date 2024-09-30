@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shaghf/core/utils/app_router.dart';
 import 'package:shaghf/features/splash_screen/presentation/view/splashScreen.dart';
 
 void main() {
@@ -10,8 +11,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Splashscreen(),
+    return MaterialApp.router(
+      routerConfig: AppRouter.router,
     );
   }
 }

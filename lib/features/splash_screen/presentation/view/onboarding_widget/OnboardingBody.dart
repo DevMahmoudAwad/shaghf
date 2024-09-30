@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:shaghf/core/utils/app_router.dart';
 import 'package:shaghf/core/utils/assets.dart';
 import 'package:shaghf/features/splash_screen/presentation/view/onboarding_widget/custom.dart';
 import 'package:shaghf/features/splash_screen/presentation/view/onboarding_widget/Indicator.dart';
@@ -19,7 +21,7 @@ class OnBoardingBodyState extends State<OnboardingBody> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Custom(),// PageView
+        const Custom(), // PageView
         Expanded(
           child: PageView(
             controller: _controller,
@@ -33,19 +35,19 @@ class OnBoardingBodyState extends State<OnboardingBody> {
                 image: Assets.on1,
                 title: 'Your favorite place to work',
                 description:
-                'In Shaghaf Co-working space, we provide a place that makes you more productive, enjoyable, and comfortable\nA place made up of different parts',
+                    'In Shaghaf Co-working space, we provide a place that makes you more productive, enjoyable, and comfortable\nA place made up of different parts',
               ),
               OnboardingPageShape(
                 image: Assets.on2,
                 title: 'Delightful open air',
                 description:
-                'You can choose a game to play from the many games we have, sit at a comfortable base, or take pictures in the different places that have been specially made to take beautiful pictures.',
+                    'You can choose a game to play from the many games we have, sit at a comfortable base, or take pictures in the different places that have been specially made to take beautiful pictures.',
               ),
               OnboardingPageShape(
                 image: Assets.on3,
                 title: 'Choose your favorite room',
                 description:
-                'You can find the right room for your current mood, as we have many rooms that meet all needs. You can move between funny room, training room and meeting room.',
+                    'You can find the right room for your current mood, as we have many rooms that meet all needs. You can move between funny room, training room and meeting room.',
               ),
             ],
           ),
@@ -60,7 +62,8 @@ class OnBoardingBodyState extends State<OnboardingBody> {
               GestureDetector(
                 onTap: () {
                   if (currentPage == 2) {
-                    Navigator.pushNamed(context, "auth");
+                    // Navigator.pushNamed(context, "auth");
+                    GoRouter.of(context).push(AppRouter.KLoginPage);
                   } else {
                     _controller.nextPage(
                       duration: const Duration(seconds: 3),

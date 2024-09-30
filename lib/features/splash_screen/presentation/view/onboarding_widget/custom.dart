@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:shaghf/core/utils/app_router.dart';
 import 'package:shaghf/core/utils/style.dart';
+
 class Custom extends StatelessWidget {
   const Custom({super.key});
 
@@ -11,13 +14,13 @@ class Custom extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           InkWell(
-            onTap: (){
-              Navigator.pushNamed(context, "auth");
+            onTap: () {
+              //Navigator.pushNamed(context, "auth");
+              GoRouter.of(context).push(AppRouter.KLoginPage);
             },
-              child: Text(
-                "Skip",
+            child: Text("Skip",
                 style: Styles.textStyle17.copyWith(color: Colors.white)),
-              )
+          )
         ],
       ),
     );
