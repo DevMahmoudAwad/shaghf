@@ -11,14 +11,14 @@ Widget OnboardingPageShape({required String image, required String title, requir
         const SizedBox(height: 24),
         Text(
           title,
-          style: Styles.textStyle20.copyWith(color:const Color(0xffFFFFFF)),
+          style: Styles.textStyle20.copyWith(color: Color(0xffFFFFFF)),
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 24),
         Text(
           description,
           style: Styles.textStyle16.copyWith(
-            color:const Color(0xffFFC100),
+            color: Color(0xffFFC100),
           ),
           textAlign: TextAlign.center,
         ),

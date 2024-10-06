@@ -7,13 +7,13 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Column(
         children: [
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 24, top: 16),
+                padding: EdgeInsets.only(left: 24, top: 16),
                 child: IconButton(
                     onPressed: () {
                       Navigator.pop(context);
