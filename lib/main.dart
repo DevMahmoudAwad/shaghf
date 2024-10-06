@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shaghf/core/utils/app_router.dart';
-import 'package:shaghf/features/splash_screen/presentation/view/splashScreen.dart';
 
 void main() {
   runApp(const MyApp());

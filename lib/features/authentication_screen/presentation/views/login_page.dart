@@ -13,7 +13,7 @@ class LoginPage extends StatelessWidget {
           Row(
             children: [
               Padding(
-                padding: EdgeInsets.only(left: 24, top: 16),
+                padding: const EdgeInsets.only(left: 24, top: 16),
                 child: IconButton(
                     onPressed: () {
                       Navigator.pop(context);
@@ -26,16 +26,16 @@ class LoginPage extends StatelessWidget {
               ),
             ],
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ImageWidget(),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 32,
           ),
-          TextformWidget(),
+          const TextformWidget(),
         ],
       ),
     );

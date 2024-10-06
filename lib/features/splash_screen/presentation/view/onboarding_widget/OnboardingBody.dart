@@ -62,7 +62,6 @@ class OnBoardingBodyState extends State<OnboardingBody> {
               GestureDetector(
                 onTap: () {
                   if (currentPage == 2) {
-                    // Navigator.pushNamed(context, "auth");
                     GoRouter.of(context).push(AppRouter.KLoginPage);
                   } else {
                     _controller.nextPage(

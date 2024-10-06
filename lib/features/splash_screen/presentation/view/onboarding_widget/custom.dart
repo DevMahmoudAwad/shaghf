@@ -15,7 +15,7 @@ class Custom extends StatelessWidget {
         children: [
           InkWell(
             onTap: () {
-              //Navigator.pushNamed(context, "auth");
+             // Navigator.pushNamed(context, "auth");
               GoRouter.of(context).push(AppRouter.KLoginPage);
             },
             child: Text("Skip",
