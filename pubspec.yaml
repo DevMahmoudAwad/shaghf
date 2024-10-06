@@ -31,8 +31,8 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter:
     sdk: flutter
-  flutter_approuter: ^3.0.5
-  go_router: ^14.3.0
+  flutter_slider_drawer: ^2.1.3
+  go_router: ^14.2.8
 
 dev_dependencies:
   flutter_lints: ^3.0.0
