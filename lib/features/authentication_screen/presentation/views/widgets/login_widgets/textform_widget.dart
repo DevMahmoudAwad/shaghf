@@ -70,12 +70,17 @@ class TextformWidget extends StatelessWidget {
           ),
           Container(
             alignment: Alignment.center,
-            child: Text(
-              "LOGIN",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500),
+            child: InkWell(
+              onTap: () {
+                GoRouter.of(context).push(AppRouter.KHomePage);
+              },
+              child: Text(
+                "LOGIN",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500),
+              ),
             ),
             margin: EdgeInsets.only(top: 22, left: 9, right: 10),
             width: double.maxFinite,
