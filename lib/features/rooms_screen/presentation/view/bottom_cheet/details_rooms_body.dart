@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:shaghf/core/utils/app_router.dart';
 import 'package:shaghf/features/rooms_screen/presentation/view/bottom_cheet/buildAmenity.dart';
 import 'package:shaghf/features/rooms_screen/presentation/view/bottom_cheet/transport_between_cheet.dart';
 
-class RoomPage extends StatelessWidget {
-  const RoomPage({super.key});
+class RoomPageBody extends StatelessWidget {
+  const RoomPageBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,9 @@ class RoomPage extends StatelessWidget {
                     top: 20,
                     left: 16,
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        GoRouter.of(context).push(AppRouter.RoomsPath);
+                      },
                       child: Icon(Icons.arrow_back, color: Colors.black),
                     ),
                   ),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:shaghf/core/utils/app_router.dart';
 
 class Home3imageWidget extends StatelessWidget {
   const Home3imageWidget({super.key});
@@ -7,10 +9,15 @@ class Home3imageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset(
-          "images/image10.png",
-          width: 342,
-          height: 200,
+        InkWell(
+          onTap: () {
+            GoRouter.of(context).push(AppRouter.RoomsPath);
+          },
+          child: Image.asset(
+            "images/image10.png",
+            width: 342,
+            height: 200,
+          ),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
