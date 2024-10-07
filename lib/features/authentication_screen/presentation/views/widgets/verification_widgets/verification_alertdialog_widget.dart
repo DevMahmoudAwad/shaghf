@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:go_router/go_router.dart';
+import 'package:shaghf/core/utils/app_router.dart';
 
 class VerificationAlertdialogWidget extends StatelessWidget {
   const VerificationAlertdialogWidget({super.key});
@@ -45,12 +47,17 @@ class VerificationAlertdialogWidget extends StatelessWidget {
             Center(
               child: Container(
                 alignment: Alignment.center,
-                child: Text(
-                  "Done",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500),
+                child: InkWell(
+                  onTap: () {
+                    GoRouter.of(context).push(AppRouter.KHomePage);
+                  },
+                  child: Text(
+                    "Done",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w500),
+                  ),
                 ),
                 // margin: EdgeInsets.only(top: 22, left: 9, right: 10),
                 width: 100,
@@ -60,15 +67,14 @@ class VerificationAlertdialogWidget extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10)),
               ),
             ),
-
-            // TextButton(
-            //   onPressed: () => Navigator.pop(context, 'Cancel'),
-            //   child: const Text('Cancel'),
-            // ),
-            // TextButton(
-            //   onPressed: () => Navigator.pop(context, 'OK'),
-            //   child: const Text('OK'),
-            // ),
+            //TextButton(
+            //  onPressed: () => GoRouter.of(context).push(AppRouter.KLoginPage),
+            // child: const Text('Cancel'),
+            //),
+            //TextButton(
+            //  onPressed: () => GoRouter.of(context).push(AppRouter.KHomePage),
+            //  child: const Text('OK'),
+            //),
           ],
         ),
       ),
