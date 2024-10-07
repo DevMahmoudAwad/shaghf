@@ -3,16 +3,8 @@ import 'package:shaghf/features/authentication_screen/presentation/views/forgotp
 import 'package:shaghf/features/authentication_screen/presentation/views/login_page.dart';
 import 'package:shaghf/features/authentication_screen/presentation/views/signup_page.dart';
 import 'package:shaghf/features/authentication_screen/presentation/views/verification_page.dart';
-<<<<<<< HEAD
-import 'package:shaghf/features/rooms_screen/presentation/views/room_page.dart';
-=======
 import 'package:shaghf/features/home_screen/presentation/views/home_page.dart';
->>>>>>> bec26e8265fe207f61a24edde9a7e2c23373f9b7
 import 'package:shaghf/features/splash_screen/presentation/view/OnboardingView.dart';
-<<<<<<< HEAD
-import 'package:shaghf/features/splash_screen/presentation/view/splashScreen.dart';
-=======
->>>>>>> f1cab517ec40fd08544d552342704c288f5cbd6e
 
 abstract class AppRouter {
   static const KLoginPage = "/LoginPage";
