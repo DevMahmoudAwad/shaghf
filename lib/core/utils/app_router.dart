@@ -46,9 +46,9 @@ abstract class AppRouter {
       path: KRoomsDetails,
       builder: (context, state) => BottomCheetView(),
     ),
-    GoRoute(
-      path: KHomeDrawerPage,
-      builder: (context, state) => MyDrawer(),
-    )
+    // GoRoute(
+    //   path: KHomeDrawerPage,
+    //   builder: (context, state) => MyDrawer(),
+    // )
   ]);
 }

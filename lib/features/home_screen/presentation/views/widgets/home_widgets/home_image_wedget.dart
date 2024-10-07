@@ -18,7 +18,7 @@ class HomeImageWedget extends StatelessWidget {
               children: [
                 IconButton(
                     onPressed: () {
-                      GoRouter.of(context).push(AppRouter.KHomeDrawerPage);
+                      //GoRouter.of(context).push(AppRouter.KHomeDrawerPage);
                       Scaffold.of(context).openDrawer();
                     },
                     icon: Image.asset(
