@@ -20,7 +20,7 @@ class RoomPageBody extends StatelessWidget {
               child: Stack(
                 children: [
                   Image.asset(
-                    "images\pic_room.png",
+                    "images/picroom.png",
                     height: 300,
                     width: double.infinity,
                     fit: BoxFit.fill,
@@ -151,7 +151,7 @@ class RoomPageBody extends StatelessWidget {
                               left: 24, right: 24, top: 16),
                           child: Image(
                             fit: BoxFit.fill,
-                            image: AssetImage("images\map.png"),
+                            image: AssetImage("images/map.png"),
                           ),
                         ),
                       ],
