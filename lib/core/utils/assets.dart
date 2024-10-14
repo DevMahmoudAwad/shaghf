@@ -8,3 +8,9 @@ abstract class Assets {
 
   
 }
+abstract class OffersFeture{
+
+  static String offer ="images/offers.png";
+  static String event ="images/event.png";
+
+}
