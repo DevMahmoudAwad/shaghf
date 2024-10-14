@@ -65,7 +65,7 @@ class OnBoardingBodyState extends State<OnboardingBody> {
                     GoRouter.of(context).push(AppRouter.KLoginPage);
                   } else {
                     _controller.nextPage(
-                      duration: const Duration(seconds: 3),
+                      duration: const Duration(seconds: 1),
                       curve: Curves.ease,
                     );
                   }

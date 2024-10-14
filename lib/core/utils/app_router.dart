@@ -3,8 +3,10 @@ import 'package:shaghf/features/authentication_screen/presentation/views/forgotp
 import 'package:shaghf/features/authentication_screen/presentation/views/login_page.dart';
 import 'package:shaghf/features/authentication_screen/presentation/views/signup_page.dart';
 import 'package:shaghf/features/authentication_screen/presentation/views/verification_page.dart';
+import 'package:shaghf/features/book_screen/presentation/view/book_screen_view.dart';
+import 'package:shaghf/features/book_screen/presentation/view/widget/book_history_screen.dart';
+import 'package:shaghf/features/book_screen/presentation/view/widget/book_review_screen.dart';
 import 'package:shaghf/features/home_screen/presentation/views/home_page.dart';
-import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/drawer.dart';
 import 'package:shaghf/features/rooms_screen/presentation/view/bottom_cheetView.dart';
 import 'package:shaghf/features/rooms_screen/presentation/view/room_page.dart';
 import 'package:shaghf/features/splash_screen/presentation/view/OnboardingView.dart';
@@ -20,6 +22,9 @@ abstract class AppRouter {
   static const RoomsPath = "/RoomPage";
   static const KRoomsDetails = "/BottomCheetView";
   static const KHomeDrawerPage = "/MyDrawer";
+  static const KBookScreenView = "/BookScreenView";
+  static const KBookReviewScreen = "/BookReviewScreen";
+  static const KBookHistoryScreen = "/BookHistoryScreen";
   static final router = GoRouter(routes: [
     GoRoute(path: '/', builder: (context, state) => Splashscreen()),
     GoRoute(path: KLoginPage, builder: (context, state) => LoginPage()),
@@ -46,9 +51,18 @@ abstract class AppRouter {
       path: KRoomsDetails,
       builder: (context, state) => BottomCheetView(),
     ),
-    // GoRoute(
-    //   path: KHomeDrawerPage,
-    //   builder: (context, state) => MyDrawer(),
-    // )
-  ]);
+    GoRoute(
+      path: KBookScreenView,
+      builder: (context, state) => BookScreenView(),
+    ),
+    GoRoute(
+      path: KBookReviewScreen,
+      builder: (context, state) => BookReviewScreen(),
+    ),
+    GoRoute(
+      path: KBookHistoryScreen,
+      builder: (context, state) => BookHistoryScreen(),
+    ),
+  ]
+  );
 }
