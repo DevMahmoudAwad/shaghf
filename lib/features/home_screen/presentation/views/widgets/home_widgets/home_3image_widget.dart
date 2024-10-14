@@ -36,10 +36,15 @@ class Home3imageWidget extends StatelessWidget {
             SizedBox(
               width: 16,
             ),
-            Image.asset(
-              "images/image12.png",
-              width: 163,
-              height: 200,
+            InkWell(
+              onTap: (){
+                GoRouter.of(context).push(AppRouter.EventsScroll);
+              },
+              child: Image.asset(
+                "images/image12.png",
+                width: 163,
+                height: 200,
+              ),
             )
           ],
         )
