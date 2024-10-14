@@ -20,11 +20,7 @@ class RoomPageBody extends StatelessWidget {
               child: Stack(
                 children: [
                   Image.asset(
-<<<<<<< HEAD
-                    "images/pic_room.png",
-=======
                     "images/picroom.png",
->>>>>>> 972235bed8e9277d79659eaf0505b815e852d34e
                     height: 300,
                     width: double.infinity,
                     fit: BoxFit.fill,

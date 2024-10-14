@@ -31,7 +31,7 @@ abstract class AppRouter {
   static const EventReview="/EventReview";
   static final router = GoRouter(routes: [
     GoRoute(path: '/', builder: (context, state) => Splashscreen()),
-    //GoRoute(path: '/', builder: (context, state) => PhotosessionPage()),
+    GoRoute(path: '/', builder: (context, state) => PhotosessionPage()),
     GoRoute(path: KLoginPage, builder: (context, state) => LoginPage()),
     GoRoute(path: KHomePage, builder: (context, state) => HomePage()),
     GoRoute(
