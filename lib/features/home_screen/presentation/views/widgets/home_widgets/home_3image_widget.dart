@@ -22,10 +22,16 @@ class Home3imageWidget extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              "images/image11.png",
-              width: 163,
-              height: 200,
+            InkWell(
+              onTap: (){
+                //GoRouter.of(context).push(AppRouter.);
+
+              },
+              child: Image.asset(
+                "images/image11.png",
+                width: 163,
+                height: 200,
+              ),
             ),
             SizedBox(
               width: 16,

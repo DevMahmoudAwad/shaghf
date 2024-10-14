@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:shaghf/core/utils/app_router.dart';
 
 class Screen2BottomCheet extends StatefulWidget {
   const Screen2BottomCheet({super.key});
@@ -114,7 +116,7 @@ class _Screen2BottomCheetState extends State<Screen2BottomCheet> {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {
-
+                GoRouter.of(context).push(AppRouter.KBookScreenView);
               },
               child: Text(
                 'Select Date',
