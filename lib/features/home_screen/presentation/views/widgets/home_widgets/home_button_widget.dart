@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:shaghf/core/utils/app_router.dart';
 
 class HomeButtonWidget extends StatelessWidget {
   const HomeButtonWidget({super.key});
@@ -12,12 +14,17 @@ class HomeButtonWidget extends StatelessWidget {
         children: [
           Container(
             alignment: Alignment.center,
-            child: Text(
-              "Membership",
-              style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.white),
+            child: InkWell(
+              onTap: (){
+                GoRouter.of(context).push(AppRouter.KMembershipPage);
+              },
+              child: Text(
+                "Membership",
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white),
+              ),
             ),
             width: 130,
             height: 48,
@@ -27,12 +34,17 @@ class HomeButtonWidget extends StatelessWidget {
           ),
           Container(
             alignment: Alignment.center,
-            child: Text(
-              "Birthday",
-              style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.white),
+            child: InkWell(
+              onTap: (){
+                GoRouter.of(context).push(AppRouter.KBirthdayPage);
+              },
+              child: Text(
+                "Birthday",
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white),
+              ),
             ),
             width: 130,
             height: 48,
@@ -42,12 +54,18 @@ class HomeButtonWidget extends StatelessWidget {
           ),
           Container(
             alignment: Alignment.center,
-            child: Text(
-              "Photo session",
-              style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.white),
+            child: InkWell(
+              onTap: (){
+                GoRouter.of(context).push(AppRouter.KPhotosessionPage);
+
+              },
+              child: Text(
+                "Photo session",
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white),
+              ),
             ),
             width: 130,
             height: 48,
