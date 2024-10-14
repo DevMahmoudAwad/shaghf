@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:shaghf/core/utils/app_router.dart';
 import 'package:shaghf/features/photosession_screen/presentation/views/widgets/photosession1_widget.dart';
 import 'package:shaghf/features/photosession_screen/presentation/views/widgets/photosession2_widget.dart';
 import 'package:shaghf/features/photosession_screen/presentation/views/widgets/photosession3_widget.dart';
@@ -14,7 +16,9 @@ class PhotosessionPage extends StatelessWidget {
         title: Text("Photo Session"),
         centerTitle: true,
         leading:
-            IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_outlined)),
+            IconButton(onPressed: () {
+              GoRouter.of(context).push(AppRouter.KHomePage);
+            }, icon: Icon(Icons.arrow_back_outlined)),
       ),
       body: Column(
         children: [

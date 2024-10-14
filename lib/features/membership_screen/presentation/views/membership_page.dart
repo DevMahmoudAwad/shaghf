@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:shaghf/core/utils/app_router.dart';
 import 'package:shaghf/features/membership_screen/presentation/views/widgets/membership_button_widget.dart';
 
 class MembershipPage extends StatefulWidget {
@@ -29,7 +31,9 @@ class _MembershipPageState extends State<MembershipPage> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            GoRouter.of(context).push(AppRouter.KHomePage);
+          },
           icon: Icon(Icons.arrow_back_outlined),
         ),
         title: Text("Membership"),

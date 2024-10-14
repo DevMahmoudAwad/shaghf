@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:shaghf/core/utils/style.dart';
-import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/home_buttonnavigation_widget.dart';
+import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/bottomNavigationbar.dart';
 import 'package:shaghf/features/offers/presentation/views/widgets/offer_scroll.dart';
-class OffersPage extends StatelessWidget {
+class OffersPage extends StatefulWidget {
   const OffersPage({super.key});
 
+  @override
+  State<OffersPage> createState() => _OffersPageState();
+}
 
+class _OffersPageState extends State<OffersPage> {
+  int _currentIndex = 0;
+  void _onItemTapped(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+    print(index);
+  }
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -29,20 +40,10 @@ class OffersPage extends StatelessWidget {
         ],
       ),
       body: OfferScroll(),
-      bottomNavigationBar:
-      const HomeButtonnavigationWidget(
-        
+      bottomNavigationBar: HomeButtonNavigationWidget(
+        currentIndex: _currentIndex,
+        x: _onItemTapped,
       ),
-    
-    
-    
-
-
-
     );
-    
-    
-
   }
-  
 }

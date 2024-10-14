@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shaghf/core/utils/app_router.dart';
-import 'package:shaghf/features/book_screen/presentation/view/widget/bottomNavigationbar.dart';
+import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/bottomNavigationbar.dart';
 import 'package:shaghf/features/book_screen/presentation/view/widget/clock.dart';
 
 class UpcomingBookingScreen extends StatefulWidget {

@@ -26,7 +26,7 @@ class HomeButtonWidget extends StatelessWidget {
                     color: Colors.white),
               ),
             ),
-            width: 130,
+            width: 110,
             height: 48,
             decoration: BoxDecoration(
                 color: Color.fromRGBO(240, 76, 41, 0.9),
@@ -46,7 +46,7 @@ class HomeButtonWidget extends StatelessWidget {
                     color: Colors.white),
               ),
             ),
-            width: 130,
+            width: 110,
             height: 48,
             decoration: BoxDecoration(
                 color: Color.fromRGBO(240, 76, 41, 0.9),
@@ -67,7 +67,7 @@ class HomeButtonWidget extends StatelessWidget {
                     color: Colors.white),
               ),
             ),
-            width: 130,
+            width: 110,
             height: 48,
             decoration: BoxDecoration(
                 color: Color.fromRGBO(240, 76, 41, 0.9),

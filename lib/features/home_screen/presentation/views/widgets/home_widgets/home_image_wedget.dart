@@ -61,7 +61,7 @@ class HomeImageWedget extends StatelessWidget {
                         color: Color(0xffFFFFFF)),
                   ),
                   SizedBox(
-                    width: 160,
+                    width: 110,
                   ),
                   Container(
                     color: Color.fromRGBO(240, 76, 41, 0.52),

@@ -23,7 +23,7 @@ class HomeButtonnavigationWidget extends StatelessWidget {
               icon: Image.asset("images/image13.png", width: 52, height: 52)),
           IconButton(
               onPressed: () {
-                  GoRouter.of(context).push(AppRouter.OffersScroll); 
+                  GoRouter.of(context).push(AppRouter.OffersScroll);
               },
               icon: Image.asset("images/image16.png", width: 30, height: 40)),
           IconButton(
@@ -34,3 +34,4 @@ class HomeButtonnavigationWidget extends StatelessWidget {
     );
   }
 }
+//GoRouter.of(context).push(AppRouter.OffersScroll);
