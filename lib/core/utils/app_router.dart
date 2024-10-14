@@ -3,10 +3,14 @@ import 'package:shaghf/features/authentication_screen/presentation/views/forgotp
 import 'package:shaghf/features/authentication_screen/presentation/views/login_page.dart';
 import 'package:shaghf/features/authentication_screen/presentation/views/signup_page.dart';
 import 'package:shaghf/features/authentication_screen/presentation/views/verification_page.dart';
+import 'package:shaghf/features/birthday_screen/presentation/views/birthday_page.dart';
 import 'package:shaghf/features/home_screen/presentation/views/home_page.dart';
 import 'package:shaghf/features/offers/presentation/views/event_details_screen.dart';
 import 'package:shaghf/features/offers/presentation/views/event_screen.dart';
 import 'package:shaghf/features/offers/presentation/views/offers_page.dart';
+import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/drawer.dart';
+import 'package:shaghf/features/membership_screen/presentation/views/membership_page.dart';
+import 'package:shaghf/features/photosession_screen/presentation/views/photosession_page.dart';
 import 'package:shaghf/features/rooms_screen/presentation/view/bottom_cheetView.dart';
 import 'package:shaghf/features/rooms_screen/presentation/view/room_page.dart';
 import 'package:shaghf/features/splash_screen/presentation/view/OnboardingView.dart';
@@ -27,6 +31,7 @@ abstract class AppRouter {
   static const EventReview="/EventReview";
   static final router = GoRouter(routes: [
     GoRoute(path: '/', builder: (context, state) => Splashscreen()),
+    //GoRoute(path: '/', builder: (context, state) => PhotosessionPage()),
     GoRoute(path: KLoginPage, builder: (context, state) => LoginPage()),
     GoRoute(path: KHomePage, builder: (context, state) => HomePage()),
     GoRoute(
