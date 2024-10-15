@@ -13,6 +13,10 @@ import 'package:shaghf/features/offers/presentation/views/event_screen.dart';
 import 'package:shaghf/features/offers/presentation/views/offers_page.dart';
 import 'package:shaghf/features/rooms_screen/presentation/view/bottom_cheetView.dart';
 import 'package:shaghf/features/rooms_screen/presentation/view/room_page.dart';
+import 'package:shaghf/features/settings/presentation/view/contactus_page.dart';
+import 'package:shaghf/features/settings/presentation/view/notification_page.dart';
+import 'package:shaghf/features/settings/presentation/view/profile_page.dart';
+import 'package:shaghf/features/settings/presentation/view/setting_page.dart';
 import 'package:shaghf/features/splash_screen/presentation/view/OnboardingView.dart';
 import 'package:shaghf/features/splash_screen/presentation/view/splashScreen.dart';
 import 'package:shaghf/features/membership_screen/presentation/views/membership_page.dart';
@@ -38,6 +42,10 @@ abstract class AppRouter {
   static const EventReview="/EventReview";
   static const OffersScroll="/OffersScroll";
   static const EventsScroll="/EventsScroll";
+  static const KSettingPage="/SettingPage";
+  static const KProfilePage="/ProfilePage";
+  static const KContactUsPage="/ContactUsPage";
+  static const KNotificationPage="/NotificationPage";
 
 
   
@@ -94,7 +102,22 @@ abstract class AppRouter {
         path: EventReview,
         builder: (context, state) =>  EventDetailsScreen(),
       ),
-
+      GoRoute(
+        path: KSettingPage,
+        builder: (context, state) =>  SettingPage(),
+      ),
+      GoRoute(
+        path: KProfilePage,
+        builder: (context, state) =>  ProfilePage(),
+      ),
+      GoRoute(
+        path: KContactUsPage,
+        builder: (context, state) =>  ContactUsPage(),
+      ),
+      GoRoute(
+        path: KNotificationPage,
+        builder: (context, state) =>  NotificationPage(),
+      ),
   ]
   );
 }

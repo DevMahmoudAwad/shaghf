@@ -45,7 +45,9 @@ class HomeButtonNavigationWidget extends StatelessWidget {
             icon: Image.asset("images/image16.png", width: 30, height: 40),
           ),
           IconButton(
-            onPressed: () => x(4),
+            onPressed: () {
+              GoRouter.of(context).push(AppRouter.KSettingPage);
+            },
             icon: Image.asset("images/image17.png", width: 30, height: 40),
           ),
         ],
