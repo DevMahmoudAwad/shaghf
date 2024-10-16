@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:shaghf/core/utils/app_router.dart';
 
 class MembershipButtonWidget extends StatelessWidget {
   const MembershipButtonWidget({super.key});
@@ -6,13 +8,18 @@ class MembershipButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 400),
+      padding: const EdgeInsets.only(top: 160),
       child: Container(
         alignment: Alignment.center,
-        child: Text(
-          "Next",
-          style: TextStyle(
-              fontSize: 16, fontWeight: FontWeight.w500, color: Colors.white),
+        child: InkWell(
+          onTap: () {
+            GoRouter.of(context).push(AppRouter.KSelectDateTime);
+          },
+          child: Text(
+            "Next",
+            style: TextStyle(
+                fontSize: 16, fontWeight: FontWeight.w500, color: Colors.white),
+          ),
         ),
         width: 342,
         height: 40,

@@ -8,6 +8,8 @@ import 'package:shaghf/features/book_screen/presentation/view/widget/book_histor
 import 'package:shaghf/features/book_screen/presentation/view/widget/book_review_screen.dart';
 import 'package:shaghf/features/home_screen/presentation/views/home_page.dart';
 import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/drawer.dart';
+import 'package:shaghf/features/membership_screen/presentation/views/widgets/book_review.dart';
+import 'package:shaghf/features/membership_screen/presentation/views/widgets/select_date_time.dart';
 import 'package:shaghf/features/offers/presentation/views/event_details_screen.dart';
 import 'package:shaghf/features/offers/presentation/views/event_screen.dart';
 import 'package:shaghf/features/offers/presentation/views/offers_page.dart';
@@ -46,6 +48,8 @@ abstract class AppRouter {
   static const KProfilePage="/ProfilePage";
   static const KContactUsPage="/ContactUsPage";
   static const KNotificationPage="/NotificationPage";
+  static const KSelectDateTime="/SelectDateTime";
+  static const KBookReview="/BookReview";
 
 
   
@@ -117,6 +121,14 @@ abstract class AppRouter {
       GoRoute(
         path: KNotificationPage,
         builder: (context, state) =>  NotificationPage(),
+      ),
+      GoRoute(
+        path: KSelectDateTime,
+        builder: (context, state) =>  SelectDateTime(),
+      ),
+      GoRoute(
+        path: KBookReview,
+        builder: (context, state) =>  BookReview(),
       ),
   ]
   );
