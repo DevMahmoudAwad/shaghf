@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:shaghf/core/utils/app_router.dart';
 import 'package:shaghf/features/birthday_screen/presentation/views/widgets/birthday_button_widget.dart';
 import 'package:shaghf/features/birthday_screen/presentation/views/widgets/birthday_cakes1_widget.dart';
 import 'package:shaghf/features/birthday_screen/presentation/views/widgets/birthday_cakes2_widget.dart';
@@ -31,7 +33,9 @@ class _BirthdayPageState extends State<BirthdayPage> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            GoRouter.of(context).push(AppRouter.KHomePage);
+          },
           icon: Icon(Icons.arrow_back_outlined),
         ),
         title: Text("Birthday"),

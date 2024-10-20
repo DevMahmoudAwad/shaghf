@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/bottomNavigationbar.dart';
 import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/home_3image_widget.dart';
 import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/home_button_widget.dart';
 import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/home_buttonnavigation_widget.dart';
@@ -15,52 +16,63 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
+  int _currentIndex = 0;
 
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
     });
   }
-
+  void _onnItemTapped(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+    print(index);
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          HomeImageWedget(),
-          Padding(
-            padding: EdgeInsets.only(left: 24, top: 24),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Text(
-                  "Advertisement",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
-                ),
-              ],
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            HomeImageWedget(),
+            Padding(
+              padding: EdgeInsets.only(left: 24, top: 24),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    "Advertisement",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
+                  ),
+                ],
+              ),
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 24),
-            child: HomeAdvertsListWidget(),
-          ),
-          HomeButtonWidget(),
-          Padding(
-            padding: EdgeInsets.only(left: 22, top: 24, bottom: 12),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Text(
-                  "Categories",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
-                ),
-              ],
+            Padding(
+              padding: EdgeInsets.only(left: 24),
+              child: HomeAdvertsListWidget(),
             ),
-          ),
-          Home3imageWidget(),
-          HomeButtonnavigationWidget()
-        ],
+            HomeButtonWidget(),
+            Padding(
+              padding: EdgeInsets.only(left: 22, top: 24, bottom: 12),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    "Categories",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
+                  ),
+                ],
+              ),
+            ),
+            Home3imageWidget(),
+          ],
+        ),
+      ),
+      bottomNavigationBar: HomeButtonNavigationWidget(
+        currentIndex: _currentIndex,
+        x: _onnItemTapped,
       ),
       drawer: Drawer(
         // Add a ListView to the drawer. This ensures the user can scroll
