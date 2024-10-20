@@ -10,11 +10,10 @@ import 'package:shaghf/features/home_screen/presentation/views/home_page.dart';
 import 'package:shaghf/features/offers/presentation/views/event_details_screen.dart';
 import 'package:shaghf/features/offers/presentation/views/event_screen.dart';
 import 'package:shaghf/features/offers/presentation/views/offers_page.dart';
-import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/drawer.dart';
+import 'package:shaghf/features/orders/presentation/views/orders_screen.dart';
 import 'package:shaghf/features/rooms_screen/presentation/view/bottom_cheetView.dart';
 import 'package:shaghf/features/rooms_screen/presentation/view/room_page.dart';
 import 'package:shaghf/features/splash_screen/presentation/view/OnboardingView.dart';
-import 'package:shaghf/features/splash_screen/presentation/view/splashScreen.dart';
 import 'package:shaghf/features/membership_screen/presentation/views/membership_page.dart';
 import 'package:shaghf/features/photosession_screen/presentation/views/photosession_page.dart';
 import 'package:shaghf/features/birthday_screen/presentation/views/birthday_page.dart';
@@ -29,20 +28,20 @@ abstract class AppRouter {
   static const RoomsPath = "/RoomPage";
   static const KRoomsDetails = "/BottomCheetView";
   static const KHomeDrawerPage = "/MyDrawer";
-  static const OffersScroll="/OffersScroll";
-  static const EventsScroll="/EventsScroll";
-   static const KBookScreenView = "/BookScreenView";
-    static const KBookReviewScreen = "/BookReviewScreen";
+  static const OffersScroll = "/OffersScroll";
+  static const EventsScroll = "/EventsScroll";
+  static const KBookScreenView = "/BookScreenView";
+  static const KBookReviewScreen = "/BookReviewScreen";
   static const KBookHistoryScreen = "/BookHistoryScreen";
   static const KPhotosessionPage = "/PhotosessionPage";
   static const KMembershipPage = "/MembershipPage";
   static const KBirthdayPage = "/BirthdayPage";
 
-  static const EventReview="/EventReview";
-
+  static const EventReview = "/EventReview";
+  static const ordersViewRoute = '/OrderScreen';
 
   static final router = GoRouter(routes: [
-    GoRoute(path: '/', builder: (context, state) => Splashscreen()),
+    // GoRoute(path: '/', builder: (context, state) => Splashscreen()),
     GoRoute(path: KLoginPage, builder: (context, state) => LoginPage()),
     GoRoute(path: KHomePage, builder: (context, state) => HomePage()),
     GoRoute(
@@ -67,19 +66,18 @@ abstract class AppRouter {
       path: KRoomsDetails,
       builder: (context, state) => BottomCheetView(),
     ),
-     GoRoute(
-        path: OffersScroll,
-        builder: (context, state) => OffersPage(),
-      ),
-     GoRoute(
-        path: EventsScroll,
-        builder: (context, state) =>  EventScreen(),
-      ),
-      GoRoute(
-        path: EventReview,
-        builder: (context, state) =>  EventDetailsScreen(),
-      ),
-
+    GoRoute(
+      path: OffersScroll,
+      builder: (context, state) => OffersPage(),
+    ),
+    GoRoute(
+      path: EventsScroll,
+      builder: (context, state) => EventScreen(),
+    ),
+    GoRoute(
+      path: EventReview,
+      builder: (context, state) => EventDetailsScreen(),
+    ),
 
     // GoRoute(
     //   path: KHomeDrawerPage,
@@ -97,9 +95,18 @@ abstract class AppRouter {
       path: KBookHistoryScreen,
       builder: (context, state) => BookHistoryScreen(),
     ),
-    GoRoute(path: KPhotosessionPage, builder: (context, state) => PhotosessionPage()),
-    GoRoute(path: KMembershipPage, builder: (context, state) => MembershipPage()),
+    GoRoute(
+      path: '/',
+      builder: (context, state) => OrdersScreen(),
+    ),
+  
+
+
+    GoRoute(
+        path: KPhotosessionPage,
+        builder: (context, state) => PhotosessionPage()),
+    GoRoute(
+        path: KMembershipPage, builder: (context, state) => MembershipPage()),
     GoRoute(path: KBirthdayPage, builder: (context, state) => BirthdayPage()),
-  ]
-  );
+  ]);
 }
