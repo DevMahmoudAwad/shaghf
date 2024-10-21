@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/bottomNavigationbar.dart';
+import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/chipath.dart';
 import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/home_3image_widget.dart';
 import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/home_button_widget.dart';
 import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/home_buttonnavigation_widget.dart';
@@ -66,7 +67,11 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            Home3imageWidget(),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: ClipPathes(),
+            ),
+            SizedBox(height: 15,),
           ],
         ),
       ),

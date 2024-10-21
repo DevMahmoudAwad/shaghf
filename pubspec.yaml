@@ -40,6 +40,7 @@ dependencies:
   one_clock: ^2.0.1
   flutter_analog_clock: ^1.0.3
   font_awesome_flutter: ^10.7.0
+  flutter_custom_clippers: ^2.1.0
 
 dev_dependencies:
   flutter_lints: ^3.0.0

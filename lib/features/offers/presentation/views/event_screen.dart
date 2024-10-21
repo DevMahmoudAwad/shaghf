@@ -1,12 +1,26 @@
 
 import 'package:flutter/material.dart';
 import 'package:shaghf/core/utils/style.dart';
+import 'package:shaghf/features/home_screen/presentation/views/widgets/home_widgets/bottomNavigationbar.dart';
 import 'package:shaghf/features/offers/presentation/views/widgets/event_scroll.dart';
 
 
-class EventScreen extends StatelessWidget {
+class EventScreen extends StatefulWidget {
   const EventScreen({Key? key}) : super(key: key);
 
+  @override
+  State<EventScreen> createState() => _EventScreenState();
+}
+
+class _EventScreenState extends State<EventScreen> {
+  int _currentIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+    print(index);
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,6 +44,10 @@ class EventScreen extends StatelessWidget {
         ],
       ),
       body: EventScroll(),
+      bottomNavigationBar: HomeButtonNavigationWidget(
+        currentIndex: _currentIndex,
+        x: _onItemTapped,
+      ),
     );
   }
 }

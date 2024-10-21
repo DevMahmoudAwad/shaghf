@@ -31,7 +31,7 @@ class _BirthdayPageState extends State<BirthdayPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: AppBar( 
         leading: IconButton(
           onPressed: () {
             GoRouter.of(context).push(AppRouter.KHomePage);
