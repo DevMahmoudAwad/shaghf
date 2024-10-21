@@ -13,6 +13,7 @@ import 'package:shaghf/features/membership_screen/presentation/views/widgets/sel
 import 'package:shaghf/features/offers/presentation/views/event_details_screen.dart';
 import 'package:shaghf/features/offers/presentation/views/event_screen.dart';
 import 'package:shaghf/features/offers/presentation/views/offers_page.dart';
+import 'package:shaghf/features/orders/presentation/views/orders_screen.dart';
 import 'package:shaghf/features/rooms_screen/presentation/view/bottom_cheetView.dart';
 import 'package:shaghf/features/rooms_screen/presentation/view/room_page.dart';
 import 'package:shaghf/features/settings/presentation/view/contactus_page.dart';
@@ -50,6 +51,8 @@ abstract class AppRouter {
   static const KNotificationPage="/NotificationPage";
   static const KSelectDateTime="/SelectDateTime";
   static const KBookReview="/BookReview";
+ static const ordersViewRoute = '/OrderScreen';
+
 
 
   
@@ -130,6 +133,11 @@ abstract class AppRouter {
         path: KBookReview,
         builder: (context, state) =>  BookReview(),
       ),
+       GoRoute(
+      path: '/',
+      builder: (context, state) => OrdersScreen(),
+    ),
+
   ]
   );
 }
