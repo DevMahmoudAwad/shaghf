@@ -1,57 +1,57 @@
 import 'package:flutter/material.dart';
 
 class RoomsClip extends CustomClipper<Path> {
+  var path = Path();
+
   @override
-  Path getClip(Size size) {
-    var path = Path();
-    path.lineTo(0, size.height * 0.75);
-    path.lineTo(size.width * 0.5, size.height);
-    path.lineTo(size.width, size.height * 0.75);
+  getClip(Size size) {
+    path.lineTo(0, size.height * .75);
+    path.lineTo(size.width * .5, size.height);
+    path.lineTo(size.width, size.height * .75);
     path.lineTo(size.width, 0);
-    path.close();
     return path;
   }
 
   @override
-  bool shouldReclip(CustomClipper<Path> oldClipper) {
-    return false;
+  bool shouldReclip(CustomClipper oldClipper) {
+    return true;
   }
 }
 
 class OrdersClip extends CustomClipper<Path> {
+  var path = Path();
+
   @override
-  Path getClip(Size size) {
-    var path = Path();
-    path.moveTo(0, size.height * 0.1);
+  getClip(Size size) {
+    path.moveTo(0, size.height * .1);
     path.lineTo(0, size.height);
     path.lineTo(size.width, size.height);
-    path.lineTo(size.width, size.height * 0.35);
-    path.lineTo(0, size.height * 0.1);
-    path.close();
+    path.lineTo(size.width, size.height * .35);
+    path.lineTo(0, size.height * .1);
     return path;
   }
 
   @override
-  bool shouldReclip(CustomClipper<Path> oldClipper) {
-    return false;
+  bool shouldReclip(CustomClipper oldClipper) {
+    return true;
   }
 }
 
 class EventsClip extends CustomClipper<Path> {
+  var path = Path();
+
   @override
-  Path getClip(Size size) {
-    var path = Path();
-    path.moveTo(0, size.height * 0.35);
+  getClip(Size size) {
+    path.moveTo(0, size.height * .35);
     path.lineTo(0, size.height);
     path.lineTo(size.width, size.height);
-    path.lineTo(size.width, size.height * 0.1);
-    path.lineTo(0, size.height * 0.35);
-    path.close();
+    path.lineTo(size.width, size.height * .1);
+    path.lineTo(0, size.height * .35);
     return path;
   }
 
   @override
-  bool shouldReclip(CustomClipper<Path> oldClipper) {
-    return false;
+  bool shouldReclip(CustomClipper oldClipper) {
+    return true;
   }
 }

@@ -34,7 +34,6 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
               child: Stack(
                 alignment: Alignment.center,
                 children: [
-                  // الخلفية مع الظل.
                   Container(
                     height: 300,
                     width: double.infinity,
@@ -308,13 +307,15 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                           SizedBox(width: 10),
                           Expanded(
                             child: InkWell(
-                              onTap: () {},
+                              onTap: () {
+                                GoRouter.of(context).push(AppRouter.ordersViewRoute);
+                              },
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Colors.grey[100],
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(30),
-                                    bottomRight: Radius.circular(30),
+                                    bottomRight: Radius.circular(30), 
                                   ),
                                 ),
                                 child: Center(

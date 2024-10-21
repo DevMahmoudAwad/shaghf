@@ -25,6 +25,7 @@ class PhotosessionPage extends StatelessWidget {
           Photosession1Widget(),
           Photosession2Widget(),
           Photosession3Widget(),
+          SizedBox(height: 392),
           PhotosessionButtonWidget()
         ],
       ),

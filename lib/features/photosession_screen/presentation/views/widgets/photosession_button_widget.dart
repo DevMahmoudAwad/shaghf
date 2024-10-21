@@ -6,37 +6,39 @@ class PhotosessionButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 80, left: 24),
+      padding: const EdgeInsets.only(top: 30, left: 16, right: 16),
       child: Container(
         alignment: Alignment.centerLeft,
+        width: double.infinity,
+        height: 50,
+        decoration: BoxDecoration(
+          color: Color(0xff20473E),
+          borderRadius: BorderRadius.circular(10),
+        ),
         child: Padding(
-          padding: const EdgeInsets.only(left: 27),
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Row(
-            children: [
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: const [
               Text(
                 "Loading",
                 style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.white),
-              ),
-              SizedBox(
-                width: 250,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
+                ),
               ),
               Text(
                 "EGP 500.0",
                 style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.white),
-              )
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
+                ),
+              ),
             ],
           ),
         ),
-        width: 450,
-        height: 40,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10), color: Color(0xff20473E)),
       ),
     );
   }

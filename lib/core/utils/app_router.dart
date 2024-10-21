@@ -51,7 +51,7 @@ abstract class AppRouter {
   static const KNotificationPage="/NotificationPage";
   static const KSelectDateTime="/SelectDateTime";
   static const KBookReview="/BookReview";
- static const ordersViewRoute = '/OrderScreen';
+ static const ordersViewRoute = '/OrdersScreen';
 
 
 
@@ -134,7 +134,7 @@ abstract class AppRouter {
         builder: (context, state) =>  BookReview(),
       ),
        GoRoute(
-      path: '/',
+      path: ordersViewRoute,
       builder: (context, state) => OrdersScreen(),
     ),
 

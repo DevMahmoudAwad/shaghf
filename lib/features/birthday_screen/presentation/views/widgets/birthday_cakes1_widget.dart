@@ -6,7 +6,7 @@ class BirthdayCakes1Widget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 24, bottom: 15),
+      padding: const EdgeInsets.only(left: 24, bottom: 15,right: 10),
       child: Container(
           decoration: BoxDecoration(
             color: Colors.white,
@@ -26,11 +26,11 @@ class BirthdayCakes1Widget extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(
-                    left: 8, top: 10, bottom: 10, right: 16),
+                    left: 8, top: 10, bottom: 10, right: 20),
                 child: Image.asset("images/image19.png"),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 16, right: 168, bottom: 19),
+                padding: const EdgeInsets.only(top: 16, right: 170, bottom: 19),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [Text("From 1 to 6 person"), Text("300 LE")],

@@ -12,7 +12,7 @@ class ClipPathes extends StatelessWidget {
       children: [
         InkWell(
           onTap: (){
-            GoRouter.of(context).push(AppRouter.RoomsPath);
+            GoRouter.of(context).push(AppRouter.ordersViewRoute);
           },
           child: ClipPath(
             clipper: RoomsClip(),
@@ -49,7 +49,7 @@ class ClipPathes extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: (){
-                    //GoRouter.of(context).push(AppRouter.);
+                    GoRouter.of(context).push(AppRouter.ordersViewRoute);
                   },
                   child: ClipPath(
                     clipper: OrdersClip(),
@@ -72,8 +72,6 @@ class ClipPathes extends StatelessWidget {
                     ),
                   ),
                 ),
-                //Orders
-                // const Spacer(),
                 InkWell(
                   onTap: (){
                     GoRouter.of(context).push(AppRouter.EventsScroll);
