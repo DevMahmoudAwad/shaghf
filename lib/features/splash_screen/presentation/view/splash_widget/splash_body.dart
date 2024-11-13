@@ -15,20 +15,23 @@ class _SplashBodyState extends State<SplashBody> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 5), () {
-      //Navigator.pushNamed(context, "s1");
+      // Navigate to the onboarding view
       GoRouter.of(context).push(AppRouter.KOnboardingView);
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return Container(
+      color: Color(0xffBF1522),
+      alignment: Alignment.center,
       child: Container(
-        width: double.infinity,
+        width: 200,
+        height: 200,
         decoration: const BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.fill,
-            image: AssetImage(Assets.splash),
+            image: AssetImage("images/tsquare.jpg"),
           ),
         ),
       ),

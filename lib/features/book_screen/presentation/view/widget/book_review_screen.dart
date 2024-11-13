@@ -48,13 +48,13 @@ class BookReviewScreen extends StatelessWidget {
                     decoration:const BoxDecoration(
                       image: DecorationImage(
                           fit: BoxFit.fill,
-                          image: AssetImage("images/picture.png"))
+                          image: AssetImage("images/flutter2.jpg"))
                     ),
                   ),
                   const Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Training room",
+                      Text("Flutter Course",
                         style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
@@ -68,7 +68,7 @@ class BookReviewScreen extends StatelessWidget {
                       ),),
                     ],
                   ),
-                  const Icon(Icons.location_on_outlined,size: 24,color: Color(0xffF04C29),)
+                  const Icon(Icons.location_on_outlined,size: 24,color: Color(0xffBF1522),)
                 ],
               ),
             ),
@@ -103,20 +103,20 @@ class BookReviewScreen extends StatelessWidget {
                             height: 10,
                            decoration:const BoxDecoration(
                               shape: BoxShape.circle,
-                              color: Colors.red,
+                              color: Color(0xffBF1522),
                             ),
                           ),
                       Container(
                         width: 1,
                         height: 40,
-                        color: Colors.red,
+                        color: Color(0xffBF1522),
                       ),
                       Container(
                         width: 10,
                         height: 10,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: Colors.red,
+                          color: Color(0xffBF1522),
                         ),
                       ),
                     ],
@@ -133,7 +133,7 @@ class BookReviewScreen extends StatelessWidget {
               ),
                       Row(
                         children: [
-                          Icon(Icons.chair, color: Color(0xffF04C29)),
+                          Icon(Icons.chair, color: Color(0xffBF1522)),
                           const SizedBox(width: 5),
                           Text(
                             '1 Seat',
@@ -155,11 +155,11 @@ class BookReviewScreen extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 12,
                           fontWeight: FontWeight.w400,
-                          color: Color(0xffF04C29),
+                          color: Colors.white,
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor:const Color(0xffdfaba2),
+                        backgroundColor:const Color(0xffBF1522),
                       ),
                     ),
                   ),
@@ -198,7 +198,7 @@ class BookReviewScreen extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        Icon(Icons.check_circle,color: Color(0xffF04C29),size: 16,),
+                        Icon(Icons.check_circle,color: Color(0xffBF1522),size: 16,),
                         SizedBox(width: 1.5,),
                         Text(
                           'Add card',
@@ -249,11 +249,11 @@ class BookReviewScreen extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w400,
-                                color: Color(0xffF04C29),
+                                color: Colors.white,
                               ),
                             ),
                             style: ElevatedButton.styleFrom(
-                              backgroundColor:const Color(0xffdfaba2),
+                              backgroundColor:const Color(0xffBF1522),
                             ),
                           ),
                         ),
@@ -296,11 +296,11 @@ class BookReviewScreen extends StatelessWidget {
                                 style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
-                                  color: Color(0xffF04C29),
+                                  color: Colors.white,
                                 ),
                               ),
                               style: ElevatedButton.styleFrom(
-                                backgroundColor:const Color(0xffdfaba2),
+                                backgroundColor:const Color(0xffBF1522),
                               ),
                             ),
                           ),
@@ -406,7 +406,7 @@ class BookReviewScreen extends StatelessWidget {
                   ),
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor:const Color(0xff20473E),
+                  backgroundColor:const Color(0xffBF1522),
                 ),
               ),
             ),

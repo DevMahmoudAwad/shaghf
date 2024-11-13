@@ -29,7 +29,7 @@ class HomeButtonWidget extends StatelessWidget {
             width: 110,
             height: 48,
             decoration: BoxDecoration(
-                color: Color.fromRGBO(240, 76, 41, 0.9),
+                color: Colors.grey[700]?.withOpacity(.65),
                 borderRadius: BorderRadius.circular(10)),
           ),
           Container(
@@ -49,7 +49,7 @@ class HomeButtonWidget extends StatelessWidget {
             width: 110,
             height: 48,
             decoration: BoxDecoration(
-                color: Color.fromRGBO(240, 76, 41, 0.9),
+                color: Colors.grey[700]?.withOpacity(.65),
                 borderRadius: BorderRadius.circular(10)),
           ),
           Container(
@@ -70,7 +70,7 @@ class HomeButtonWidget extends StatelessWidget {
             width: 110,
             height: 48,
             decoration: BoxDecoration(
-                color: Color.fromRGBO(240, 76, 41, 0.9),
+                color: Colors.grey[700]?.withOpacity(.65),
                 borderRadius: BorderRadius.circular(10)),
           ),
         ],

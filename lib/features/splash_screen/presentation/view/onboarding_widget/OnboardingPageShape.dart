@@ -18,7 +18,7 @@ Widget OnboardingPageShape({required String image, required String title, requir
         Text(
           description,
           style: Styles.textStyle16.copyWith(
-            color: Color(0xffFFC100),
+            color: Colors.black,
           ),
           textAlign: TextAlign.center,
         ),

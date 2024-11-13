@@ -21,7 +21,7 @@ class RoomPageBody extends StatelessWidget {
                 children: [
 
                   Image.asset(
-                    "images/picroom.png",
+                    "images/image1.jpg",
                     height: 300,
                     width: double.infinity,
                     fit: BoxFit.fill,
@@ -39,7 +39,7 @@ class RoomPageBody extends StatelessWidget {
                             child: Icon(Icons.arrow_back, color: Colors.black),
                           ),
                           Text(
-                            "Training Room",
+                            "Flutter Course",
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
@@ -65,7 +65,7 @@ class RoomPageBody extends StatelessWidget {
                         color: Colors.white,
                       ),),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xffF04C29),
+                        backgroundColor: Color(0xffBF1522),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30),
                         ),
@@ -90,28 +90,28 @@ class RoomPageBody extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Training Room',
+                    'Flutter Course',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
-                      color: Color(0xffF04C29),
+                      color: Color(0xffBF1522),
                     ),
                   ),
                   SizedBox(height: 16),
                   Row(
                     children: [
-                      Icon(Icons.chair, color: Color(0xffF04C29)),
+                      Icon(Icons.chair, color: Color(0xffBF1522)),
                       const SizedBox(width: 5),
                       Text(
                         '30 Seats',
                         style: TextStyle(fontSize: 14, color: Color(0xff515151)),
                       ),
                     ],
-                  ),
+                  ), 
                   const SizedBox(height: 8),
                   Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-                        'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    'Expert Guidance: Learn from experienced Flutter developers and industry experts.'
+                        'Project Showcase: Build real-world apps to showcase your skills.',
                     style: TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.w400,
@@ -123,17 +123,17 @@ class RoomPageBody extends StatelessWidget {
                     'Amenities',
                     style: TextStyle(
                         fontSize: 16,
-                        color: Color(0xffF04C29),
+                        color: Color(0xffBF1522),
                         fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 8),
                   Column(
                     children: [
-                      buildAmenityRow(Icons.print, 'Printer, Scanner and photocopier'),
-                      buildAmenityRow(Icons.wifi, 'Wi-Fi'),
-                      buildAmenityRow(Icons.local_cafe, 'Free coffee'),
-                      buildAmenityRow(Icons.videocam, 'Video Conf'),
-                      buildAmenityRow(Icons.connected_tv, 'LED screen'),
+                      buildAmenityRow("Interactive Coding Labs: Hands-on coding exercises to practice Flutter development."),
+                      buildAmenityRow("Comprehensive Learning: Master both frontend and backend development technologies."),
+                      buildAmenityRow("Advanced AI Techniques: Learn cutting-edge AI algorithms and tools."),
+                      buildAmenityRow("Core Programming Concepts: Learn the fundamentals of C++ and object-oriented programming."),
+                      buildAmenityRow("Marketing Strategies: Learn how to create and implement digital marketing strategies."),
                     ],
                   ),
 
@@ -144,7 +144,7 @@ class RoomPageBody extends StatelessWidget {
                     child: Center(
                       child: Icon(
                         Icons.keyboard_double_arrow_down,
-                        color: Color(0xff20473E),
+                        color: Colors.black,
                       ),
                     ),
                   ),
@@ -152,14 +152,14 @@ class RoomPageBody extends StatelessWidget {
 
                   Row(
                     children: [
-                      Icon(Icons.location_on, color: Color(0xffF04C29)),
+                      Icon(Icons.location_on, color: Color(0xffBF1522)),
                       const SizedBox(width: 8),
                       Text(
                         'Location',
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
-                          color: Color(0xffF04C29),
+                          color: Color(0xffBF1522),
                         ),
                       ),
                     ],
@@ -178,7 +178,7 @@ class RoomPageBody extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w700,
-                          color: Color(0xffF04C29),
+                          color: Color(0xffBF1522),
                         ),
                       ),
                       InkWell(
@@ -187,7 +187,7 @@ class RoomPageBody extends StatelessWidget {
                         },
                         child: Icon(
                           Icons.keyboard_arrow_down,
-                          color: Color(0xffF04C29),
+                          color: Color(0xffBF1522),
                         ),
                       ),
                       ElevatedButton(
@@ -195,7 +195,7 @@ class RoomPageBody extends StatelessWidget {
                           GoRouter.of(context).push(AppRouter.KBookScreenView);
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xffF04C29),
+                          backgroundColor: Color(0xffBF1522),
                           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                         ),
                         child: Text('Select Date',

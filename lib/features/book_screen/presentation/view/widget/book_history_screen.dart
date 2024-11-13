@@ -52,7 +52,7 @@ class _BookHistoryScreenState extends State<BookHistoryScreen> {
                     },
                     child: Container(
                       decoration: BoxDecoration(
-                        color: isPastSelected ? Color(0xffF04C29) : Colors.grey[200],
+                        color: isPastSelected ? Color(0xffBF1522) : Colors.grey[200],
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(8),
                           bottomLeft: Radius.circular(8),
@@ -75,7 +75,7 @@ class _BookHistoryScreenState extends State<BookHistoryScreen> {
                     },
                     child: Container(
                       decoration: BoxDecoration(
-                        color: isPastSelected ? Colors.grey[200] : Color(0xffF04C29),
+                        color: isPastSelected ? Colors.grey[200] : Color(0xffBF1522),
                         borderRadius: BorderRadius.only(
                           topRight: Radius.circular(8),
                           bottomRight: Radius.circular(8),

@@ -5,10 +5,10 @@ class OnboardingView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       child: Scaffold(
-          backgroundColor: Color(0xff146356),
-          body: OnboardingBody(),
+          backgroundColor: Color(0xffBF1522),
+          body: const OnboardingBody(),
       ),
     );
   }

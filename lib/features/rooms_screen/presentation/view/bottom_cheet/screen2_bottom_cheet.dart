@@ -127,7 +127,7 @@ class _Screen2BottomCheetState extends State<Screen2BottomCheet> {
                 ),
               ),
               style: ElevatedButton.styleFrom(
-                backgroundColor:const Color(0xff20473E),
+                backgroundColor:const Color(0xffBF1522),
               ),
             ),
           ),

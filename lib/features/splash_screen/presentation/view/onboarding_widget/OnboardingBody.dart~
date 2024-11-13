@@ -76,7 +76,7 @@ class OnBoardingBodyState extends State<OnboardingBody> {
                   padding: const EdgeInsets.all(15),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.black,
+                    color: Color(0xff20473E),
                   ),
                   child: const Icon(
                     Icons.arrow_forward,

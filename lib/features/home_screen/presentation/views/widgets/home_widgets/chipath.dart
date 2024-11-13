@@ -12,7 +12,7 @@ class ClipPathes extends StatelessWidget {
       children: [
         InkWell(
           onTap: (){
-            GoRouter.of(context).push(AppRouter.ordersViewRoute);
+            GoRouter.of(context).push(AppRouter.RoomsPath);
           },
           child: ClipPath(
             clipper: RoomsClip(),
@@ -29,7 +29,7 @@ class ClipPathes extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Rooms",style: TextStyle(fontSize: 24,color: Colors.white,)),
+                    Text("Courses",style: TextStyle(fontSize: 24,color: Colors.white,)),
                     const Spacer(),
                     const Image(image: AssetImage("images/room.png")),
                   ],
@@ -82,7 +82,7 @@ class ClipPathes extends StatelessWidget {
                       width: 163,
                       height: 210,
                       decoration: BoxDecoration(
-                          color: const Color(0xffFFCC0A).withOpacity(.65),
+                          color: const Color(0xffF04C29).withOpacity(.65),
                           borderRadius: BorderRadius.circular(20)),
                       child: Padding(
                         padding:  EdgeInsets.only(top: 56.0,right: 6),

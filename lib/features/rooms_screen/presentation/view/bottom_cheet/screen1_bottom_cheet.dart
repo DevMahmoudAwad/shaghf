@@ -23,41 +23,16 @@ class Screen1BottomCheet extends StatelessWidget {
             SizedBox(height: 16),
             Column(
               children: [
-                buildAmenityRow(
-                    Icons.print,
-                    'Printer, Scanner and photocopier\n'
-                    'printing, photocopier and scanning services'),
-                buildAmenityRow(
-                    Icons.wifi,
-                    'Wi-Fi\n'
-                    'free high speed Wifi'),
-                buildAmenityRow(
-                    Icons.local_cafe,
-                    'Free coffee\n'
-                    'free coffee and tea provided'),
-                buildAmenityRow(
-                    Icons.videocam,
-                    'Video Conf\n'
-                    'video conferencing setup avaliable'),
-                buildAmenityRow(
-                    Icons.connected_tv,
-                    'LED screen\n'
-                    'LED screen'),
-                buildAmenityRow(
-                    Icons.people_rounded,
-                    'Meeting room access\n'
-                    'Meeting room access'),
-                buildAmenityRow(
-                    Icons.support_agent,
-                    'Reception'),
-                buildAmenityRow(
-                    Icons.chair,
-                    '30 Seats'),
-                buildAmenityRow(
-                    Icons.location_on_outlined,
-                    'Location'),
+                buildAmenityRow("Interactive Coding Labs: Hands-on coding exercises to practice Flutter development."),
+                buildAmenityRow("Comprehensive Learning: Master both frontend and backend development technologies."),
+                buildAmenityRow("Advanced AI Techniques: Learn cutting-edge AI algorithms and tools."),
+                buildAmenityRow("Core Programming Concepts: Learn the fundamentals of C++ and object-oriented programming."),
+                buildAmenityRow("Marketing Strategies: Learn how to create and implement digital marketing strategies."),
+                buildAmenityRow("Personalized Coaching: Get personalized guidance and support for your Flutter development journey."),
+                buildAmenityRow("Hands-on Coding: Learn how to write and implement code in Flutter."),
+                buildAmenityRow("Design Fundamentals: Learn the basics of UI and UX design principles."),
               ],
-            ),
+            )
           ],
         ),
       ),

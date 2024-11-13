@@ -40,7 +40,7 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         fit: BoxFit.fill,
-                        image: AssetImage("images/picture.png"),
+                        image: AssetImage("images/image50.jpg"),
                       ),
                       boxShadow: [
                         BoxShadow(
@@ -77,7 +77,7 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
-                        color: Color(0xffF04C29),
+                        color: Color(0xffBF1522),
                       ),
                     ),
                     SizedBox(height: 18),
@@ -89,7 +89,7 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                             Icon(
                               Icons.calendar_month,
                               size: 16,
-                              color: Color(0xffF04C29),
+                              color: Color(0xffBF1522),
                             ),
                             SizedBox(width: 1.5),
                             Text(
@@ -121,7 +121,7 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                             Icon(
                               Icons.watch_later,
                               size: 16,
-                              color: Color(0xffF04C29),
+                              color: Color(0xffBF1522),
                             ),
                             SizedBox(width: 1.5),
                             Text(
@@ -153,7 +153,7 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                             Icon(
                               Icons.event_seat,
                               size: 16,
-                              color: Color(0xffF04C29),
+                              color: Color(0xffBF1522),
                             ),
                             SizedBox(width: 1.5),
                             Text(
@@ -185,7 +185,7 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                             Icon(
                               Icons.attach_money,
                               size: 16,
-                              color: Color(0xffF04C29),
+                              color: Color(0xffBF1522),
                             ),
                             SizedBox(width: 1.5),
                             Text(
@@ -217,7 +217,7 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                             Icon(
                               Icons.attach_money,
                               size: 16,
-                              color: Color(0xffF04C29),
+                              color: Color(0xffBF1522),
                             ),
                             SizedBox(width: 1.5),
                             Text(
@@ -249,7 +249,7 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                             Icon(
                               Icons.coffee,
                               size: 16,
-                              color: Color(0xffF04C29),
+                              color: Color(0xffBF1522),
                             ),
                             SizedBox(width: 1.5),
                             Text(
@@ -286,7 +286,7 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                               },
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: Color(0xffF04C29),
+                                  color: Color(0xffBF1522),
                                   borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(30),
                                     bottomLeft: Radius.circular(30),
@@ -323,7 +323,7 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                                     "Add Items",
                                     style: TextStyle(
                                       fontSize: 16,
-                                      color: Color(0xffF04C29),
+                                      color: Color(0xffBF1522),
                                     ),
                                   ),
                                 ),

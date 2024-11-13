@@ -24,7 +24,7 @@ class Home3imageWidget extends StatelessWidget {
           children: [
             InkWell(
               onTap: (){
-                //GoRouter.of(context).push(AppRouter.);
+                GoRouter.of(context).push(AppRouter.ordersViewRoute);
               },
               child: Image.asset(
                 "images/image11.png",
@@ -33,7 +33,7 @@ class Home3imageWidget extends StatelessWidget {
               ),
             ),
             SizedBox(
-              width: 16,
+              width: 16, 
             ),
             InkWell(
               onTap: (){

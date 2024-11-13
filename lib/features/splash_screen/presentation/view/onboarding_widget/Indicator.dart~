@@ -14,7 +14,7 @@ class Indicator extends StatelessWidget {
           width: 15,
           height: 15,
           decoration: BoxDecoration(
-            color: currentPage == index ? Colors.black : Colors.white,
+            color: currentPage == index ? Color(0xffF04C29) : Colors.brown,
             borderRadius: BorderRadius.circular(8),
           ),
         );

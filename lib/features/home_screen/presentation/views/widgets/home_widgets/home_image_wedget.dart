@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:shaghf/core/utils/app_router.dart';
+
 
 class HomeImageWedget extends StatelessWidget {
   const HomeImageWedget({super.key});
@@ -52,9 +51,10 @@ class HomeImageWedget extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 20, left: 20),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Delightful open air",
+                    "Your Learning Hub",
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w600,
@@ -94,7 +94,7 @@ class HomeImageWedget extends StatelessWidget {
       height: 300,
       decoration: BoxDecoration(
           image: DecorationImage(
-              fit: BoxFit.fill, image: AssetImage("images/image4.png"))),
+              fit: BoxFit.cover, image: AssetImage("images/image21.jpg"))),
     );
   }
 }

@@ -140,7 +140,7 @@ class _DateAndTimeState extends State<DateAndTime> {
                 ),
               ),
               style: ElevatedButton.styleFrom(
-                backgroundColor: isLoading ? const Color(0xff919393) : const Color(0xff20473E),
+                backgroundColor: isLoading ? const Color(0xff919393) : const Color(0xffBF1522),
               ),
             ),
           ),

@@ -9,7 +9,7 @@ class Custom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(right: 24),
+      padding: const EdgeInsets.only(right: 24,top: 24),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
