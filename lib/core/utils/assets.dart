@@ -1,5 +1,5 @@
 abstract class Assets {
-  static const logo = "images/image.jpg";
+  static const logo = "images/finalProject.jpg";
   static const splash = "images/splash.png";
   static const on1 = "images/on1.png";
   static const on2 = "images/on2.png";
@@ -10,7 +10,7 @@ abstract class Assets {
 }
 abstract class OffersFeture{
 
-  static String offer ="images/offers.png";
-  static String event ="images/event.png";
+  static String offer ="images/offers.jpg";
+  static String event ="images/event2.jpg";
 
 }

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:shaghf/core/utils/assets.dart';
 import 'package:shaghf/features/offers/presentation/views/widgets/offer_dailog.dart';
 class OfferBox extends StatelessWidget {
-  const OfferBox({super.key});
+  final String offers;
+  const OfferBox({super.key, required this.offers});
+
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,7 @@ class OfferBox extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(10.0),
                 child: Image.asset(
-                  OffersFeture.offer,
+                  offers,
                   fit: BoxFit.cover,
                   height: 120,
                   width: double.infinity,
@@ -50,7 +52,7 @@ class OfferBox extends StatelessWidget {
                         Spacer(),
                         CircleAvatar(
                           radius: 16,
-                          backgroundColor: Colors.red,
+                          backgroundColor: Color.fromARGB(255, 202, 31, 31),
                           child: Icon(Icons.arrow_forward, color: Colors
                               .white,),
                         )

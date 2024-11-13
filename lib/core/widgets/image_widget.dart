@@ -9,10 +9,12 @@ class ImageWidget extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(top: 120),
       height: 235,
-      width: 140,
+      width: 170,
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage(Assets.logo), fit: BoxFit.fill)),
+
+              image: AssetImage(Assets.logo),
+               fit: BoxFit.fill)),
     );
   }
 }

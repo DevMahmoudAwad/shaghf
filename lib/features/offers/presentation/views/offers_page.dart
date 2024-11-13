@@ -22,10 +22,10 @@ class _OffersPageState extends State<OffersPage> {
     return  Scaffold(
       backgroundColor: Colors.white,
       appBar:AppBar(
-        backgroundColor: Colors.transparent,
-        title:const Text(
+        backgroundColor: Colors.white,
+        title:  Text(
           'Offers',
-          style:Styles.textStyle16 ,
+          style:Styles.textStyle16.copyWith(color: Colors.black54), 
         ),
         centerTitle: true,
         leading: IconButton(

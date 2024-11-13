@@ -32,7 +32,7 @@ class EventdetailsFooterFooter extends StatelessWidget {
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                       fontFamily: "Comfortaa",
-                      color: Colors.deepOrange),
+                      color: Color.fromARGB(255, 202, 31, 31)),
                 ),
                 SizedBox(
                   width: 5,
@@ -41,7 +41,7 @@ class EventdetailsFooterFooter extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 17,
                         fontFamily: "Comfortaa",
-                        color: Colors.deepOrange)),
+                        color: Color.fromARGB(255, 202, 31, 31))),
               ],
             ),
           ),
@@ -58,7 +58,7 @@ class EventdetailsFooterFooter extends StatelessWidget {
                 fixedSize: Size(140, 40),
                 elevation: 6,
                 shadowColor: Colors.black,
-                backgroundColor: Colors.deepOrange,
+                backgroundColor: Color.fromARGB(255, 202, 31, 31),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10))),
           )

@@ -3,7 +3,19 @@ import 'package:flutter/material.dart';
 import 'package:shaghf/features/offers/presentation/views/widgets/offer_box.dart';
 
 class OfferScroll extends StatelessWidget {
-  const OfferScroll({super.key});
+   OfferScroll({super.key});
+  final List<String> offers = [
+    'images/FB_IMG_1731203034668.jpg',
+    'images/FB_IMG_1731203052668.jpg',
+    'images/FB_IMG_1731203095853.jpg',
+    'images/FB_IMG_1731203138042.jpg',
+    'images/FB_IMG_1731203490281.jpg',
+    'images/FB_IMG_1731203581673.jpg',
+    'images/FB_IMG_1731203581673.jpg',
+    'images/offers.jpg'
+
+
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +28,9 @@ class OfferScroll extends StatelessWidget {
             mainAxisSpacing: 10,
             crossAxisSpacing: 10,
           ),
-          itemCount: 8,
+          itemCount: offers.length,
           itemBuilder: (context, index) {
-            return const OfferBox();
+            return  OfferBox(offers: offers[index]);
           }),
     );
   }

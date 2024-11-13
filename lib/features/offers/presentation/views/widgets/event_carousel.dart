@@ -17,15 +17,15 @@ class _EventCarouselState extends State<EventCarousel> {
       height: 10,
       decoration: BoxDecoration(
         color: CurrImg == idx
-            ? Colors.deepOrange
-            : Colors.deepOrange.withOpacity(.6),
+            ? Color.fromARGB(255, 202, 31, 31)
+            : Color.fromARGB(255, 202, 31, 31).withOpacity(.6),
         borderRadius: BorderRadius.all(Radius.circular(10)),
       ),
     );
   }
 
   final List<ImageProvider> _ImAgeList = [
-    AssetImage(OffersFeture.event),
+    AssetImage(OffersFeture.event,),
     AssetImage(OffersFeture.event),
     AssetImage(OffersFeture.event),
 
