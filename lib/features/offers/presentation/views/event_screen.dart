@@ -26,10 +26,10 @@ class _EventScreenState extends State<EventScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor:   Colors.white,
         title: Text(
           'Events',
-          style: Styles.textStyle16,
+          style: Styles.textStyle16.copyWith(color: Colors.black54),
         ),
         centerTitle: true,
         leading: IconButton(

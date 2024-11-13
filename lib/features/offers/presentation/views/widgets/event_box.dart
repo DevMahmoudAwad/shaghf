@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shaghf/core/utils/app_router.dart';
-import 'package:shaghf/core/utils/assets.dart';
 
 
 class EventBox extends StatelessWidget {
-  const EventBox({Key? key}) : super(key: key);
+    final String imagePath;
+
+  const EventBox({Key? key, required this.imagePath}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,7 @@ class EventBox extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(10.0),
                 child: Image.asset(
-                  OffersFeture.event,
+                  imagePath,
                   fit: BoxFit.cover,
                   height: 120,
                   width: double.infinity,
@@ -50,7 +51,7 @@ class EventBox extends StatelessWidget {
                     Spacer(),
                     CircleAvatar(
                       radius: 16,
-                      backgroundColor: Colors.red,
+                      backgroundColor:Color.fromARGB(255, 202, 31, 31),
                       child: Icon(
                         Icons.arrow_forward,
                         color: Colors.white,

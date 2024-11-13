@@ -17,13 +17,13 @@ class OfferDailog extends StatelessWidget {
               children: [
                 Icon(Icons.local_offer_outlined),
                 Text(
-                  "30% off  10 booking (up to EGP 150)",
+                  "40% off  10 booking (up to EGP 150)",
                   style: TextStyle(fontSize: 12),
                 )
               ],
             ),
             SizedBox(height: 20),
-            Image.asset("images/code.png"),
+            Image.asset("images/finalProject.jpg"),
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
@@ -31,7 +31,7 @@ class OfferDailog extends StatelessWidget {
               },
               style: ElevatedButton.styleFrom(
                   fixedSize: Size(200, 50),
-                  backgroundColor: Colors.deepOrange,
+                  backgroundColor:Color.fromARGB(255, 202, 31, 31) ,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10))),
               child: Text('Copy',

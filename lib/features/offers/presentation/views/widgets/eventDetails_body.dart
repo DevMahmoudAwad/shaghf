@@ -21,7 +21,7 @@ class EventdetailsBody extends StatelessWidget {
             style: TextStyle(
                 fontSize: 20,
                 fontFamily: "Comfortaa",
-                color: Colors.deepOrange),
+                color: Color.fromARGB(255, 202, 31, 31)),
           ),
           SizedBox(
             height: 25,
@@ -31,7 +31,7 @@ class EventdetailsBody extends StatelessWidget {
               Icon(
                 Icons.circle,
                 size: 15,
-                color: Colors.deepOrange,
+                color: Color.fromARGB(255, 202, 31, 31),
               ),
               SizedBox(
                 width: 5,
@@ -52,7 +52,7 @@ class EventdetailsBody extends StatelessWidget {
               Icon(
                 Icons.circle,
                 size: 15,
-                color: Colors.deepOrange,
+                color: Color.fromARGB(255, 202, 31, 31),
               ),
               SizedBox(
                 width: 5,
@@ -73,7 +73,7 @@ class EventdetailsBody extends StatelessWidget {
               Icon(
                 Icons.circle,
                 size: 15,
-                color: Colors.deepOrange,
+                color: Color.fromARGB(255, 202, 31, 31),
               ),
               SizedBox(
                 width: 5,
@@ -94,7 +94,7 @@ class EventdetailsBody extends StatelessWidget {
               Icon(
                 Icons.circle,
                 size: 15,
-                color: Colors.deepOrange,
+                color: Color.fromARGB(255, 202, 31, 31),
               ),
               SizedBox(
                 width: 5,
@@ -115,7 +115,7 @@ class EventdetailsBody extends StatelessWidget {
               Icon(
                 Icons.circle,
                 size: 15,
-                color: Colors.deepOrange,
+                color: Color.fromARGB(255, 202, 31, 31),
               ),
               SizedBox(
                 width: 5,

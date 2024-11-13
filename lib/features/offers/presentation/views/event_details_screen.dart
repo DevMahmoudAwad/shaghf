@@ -30,7 +30,7 @@ class EventDetailsScreen extends StatelessWidget {
                 ),
                 Icon(
                   Icons.star,
-                  color: Colors.red,
+                  color: Color.fromARGB(255, 202, 31, 31),
                 ),
               ],
             ),
@@ -43,7 +43,7 @@ class EventDetailsScreen extends StatelessWidget {
               height: 30,
               padding: EdgeInsets.symmetric(horizontal: 12, vertical: 3),
               decoration: BoxDecoration(
-                color: Colors.deepOrange,
+                color: Color.fromARGB(255, 202, 31, 31),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: InkWell(
