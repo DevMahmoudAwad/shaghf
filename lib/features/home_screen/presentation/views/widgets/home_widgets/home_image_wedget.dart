@@ -38,13 +38,24 @@ class HomeImageWedget extends StatelessWidget {
               padding: const EdgeInsets.only(top: 88, left: 20),
               child: Row(
                 children: [
-                  IconButton(
-                      onPressed: () {},
-                      icon: Image.asset(
-                        "images/image7.png",
-                        height: 27,
-                        width: 96,
-                      ))
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      print("Roxy button pressed");
+                    },
+                    icon: Icon(Icons.location_pin, color: Colors.white),
+                    label: Text("Location",style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white,
+                    ),),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xffBF1522),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    ),
+                  )
                 ],
               ),
             ),
@@ -64,7 +75,7 @@ class HomeImageWedget extends StatelessWidget {
                     width: 110,
                   ),
                   Container(
-                    color: Color.fromRGBO(240, 76, 41, 0.52),
+                    color: Color(0xffBF1522),
                     width: 52,
                     height: 22,
                     child: Row(

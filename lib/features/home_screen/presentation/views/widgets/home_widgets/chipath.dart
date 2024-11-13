@@ -20,7 +20,7 @@ class ClipPathes extends StatelessWidget {
               width: double.infinity,
               height: 200,
               decoration: BoxDecoration(
-                color: const Color(0xff20473E).withOpacity(.65),
+                color:  Colors.grey[700],
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Padding(
@@ -49,7 +49,7 @@ class ClipPathes extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: (){
-                    GoRouter.of(context).push(AppRouter.ordersViewRoute);
+                    GoRouter.of(context).push(AppRouter.OffersScroll);
                   },
                   child: ClipPath(
                     clipper: OrdersClip(),
@@ -57,14 +57,14 @@ class ClipPathes extends StatelessWidget {
                       width: 163,
                       height: 210,
                       decoration: BoxDecoration(
-                          color: Color(0xffF04C29),
+                          color: Colors.grey[700],
                           borderRadius: BorderRadius.circular(20)),
                       child: Padding(
                         padding:  EdgeInsets.only(top: 56.0,left: 6),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Orders",style: TextStyle(fontSize: 24,color: Colors.white,)),
+                            Text("Offers",style: TextStyle(fontSize: 24,color: Colors.white,)),
                             Image(image: AssetImage('images/orders.png'),width: 115,height: 115,),
                           ],
                         ),
@@ -82,7 +82,7 @@ class ClipPathes extends StatelessWidget {
                       width: 163,
                       height: 210,
                       decoration: BoxDecoration(
-                          color: const Color(0xffF04C29).withOpacity(.65),
+                          color:  Colors.grey[700],
                           borderRadius: BorderRadius.circular(20)),
                       child: Padding(
                         padding:  EdgeInsets.only(top: 56.0,right: 6),

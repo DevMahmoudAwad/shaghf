@@ -57,7 +57,7 @@ class NotificationTile extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 25.0,
-          backgroundImage: AssetImage('images/imgnoti.png'),
+          backgroundImage: AssetImage('images/tsquare.jpg'),
         ),
         SizedBox(width: 16.0),
         Expanded(
@@ -65,7 +65,7 @@ class NotificationTile extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Ceramics workshop Event',
+                'Flutter course next Wednesday, first day',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 16.0,
@@ -73,7 +73,7 @@ class NotificationTile extends StatelessWidget {
               ),
               SizedBox(height: 4.0),
               Text(
-                'today 12:05 pm',
+                'today 12:00 pm',
                 style: TextStyle(
                   color: Colors.black,
                 ),

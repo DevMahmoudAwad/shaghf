@@ -10,7 +10,7 @@ class SignupTextformfieldWidget extends StatelessWidget {
       width: 342,
       height: 510,
       decoration: BoxDecoration(
-          color: Color(0xfffde9bd), borderRadius: BorderRadius.circular(20)),
+          color: Colors.grey[400], borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -107,7 +107,7 @@ class SignupTextformfieldWidget extends StatelessWidget {
             width: double.maxFinite,
             height: 50,
             decoration: BoxDecoration(
-                color: Color.fromARGB(255, 202, 31, 31),
+                color: Color(0xffBF1522),
                 borderRadius: BorderRadius.circular(10)),
           ),
           Padding(
@@ -122,7 +122,7 @@ class SignupTextformfieldWidget extends StatelessWidget {
                   },
                   child: Text(
                     "Log In",
-                    style: TextStyle(color: Color(0xffF04C29)),
+                    style: TextStyle(color: Color(0xffBF1522)),
                   ),
                 )
               ],

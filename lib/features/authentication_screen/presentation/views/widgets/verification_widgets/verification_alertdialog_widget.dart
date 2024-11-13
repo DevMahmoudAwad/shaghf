@@ -63,7 +63,7 @@ class VerificationAlertdialogWidget extends StatelessWidget {
                 width: 100,
                 height: 50,
                 decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 202, 31, 31),
+                    color: Color(0xffBF1522),
                     borderRadius: BorderRadius.circular(10)),
               ),
             ),
@@ -91,7 +91,7 @@ class VerificationAlertdialogWidget extends StatelessWidget {
           width: double.maxFinite,
           height: 50,
           decoration: BoxDecoration(
-              color: Color(0xff20473e),
+              color: Color(0xffBF1522),
               borderRadius: BorderRadius.circular(10)),
         ),
       ),

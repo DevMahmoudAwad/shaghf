@@ -40,11 +40,11 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         fit: BoxFit.fill,
-                        image: AssetImage("images/image50.jpg"),
+                        image: AssetImage("images/tsquare.jpg"),
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.white.withOpacity(0.5),
+                          color: Colors.white10.withOpacity(0.2),
                           spreadRadius: 5,
                           blurRadius: 7,
                           offset: Offset(0, 3),
@@ -64,7 +64,7 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Training Room",
+                      "Flutter Course",
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
@@ -77,7 +77,7 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
-                        color: Color(0xffBF1522),
+                        color: Colors.black,
                       ),
                     ),
                     SizedBox(height: 18),
@@ -273,65 +273,70 @@ class _UpcomingBookingScreenState extends State<UpcomingBookingScreen> {
                       ],
                     ),
                     SizedBox(height: 12),
-                    Container(
-                      height: 40,
-                      width: 342,
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: InkWell(
-                              onTap: () {
-                                GoRouter.of(context)
-                                    .push(AppRouter.KBookScreenView);
-                              },
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: Color(0xffBF1522),
-                                  borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(30),
-                                    bottomLeft: Radius.circular(30),
-                                  ),
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    "Extra Time",
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(width: 10),
-                          Expanded(
-                            child: InkWell(
-                              onTap: () {
-                                GoRouter.of(context).push(AppRouter.ordersViewRoute);
-                              },
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[100],
-                                  borderRadius: BorderRadius.only(
-                                    topRight: Radius.circular(30),
-                                    bottomRight: Radius.circular(30), 
-                                  ),
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    "Add Items",
-                                    style: TextStyle(
-                                      fontSize: 16,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          height: 40,
+                          width: 342,
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: InkWell(
+                                  onTap: () {
+                                    GoRouter.of(context)
+                                        .push(AppRouter.KBookScreenView);
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
                                       color: Color(0xffBF1522),
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(30),
+                                        bottomLeft: Radius.circular(30),
+                                      ),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "Extra Time",
+                                        style: TextStyle(
+                                          fontSize: 18,
+                                          color: Colors.white,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
-                            ),
+                              SizedBox(width: 10),
+                              Expanded(
+                                child: InkWell(
+                                  onTap: () {
+                                    GoRouter.of(context).push(AppRouter.ordersViewRoute);
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[100],
+                                      borderRadius: BorderRadius.only(
+                                        topRight: Radius.circular(30),
+                                        bottomRight: Radius.circular(30),
+                                      ),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "Add Items",
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.black,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ],
                 ),

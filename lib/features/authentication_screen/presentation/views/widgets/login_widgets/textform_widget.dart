@@ -11,7 +11,7 @@ class TextformWidget extends StatelessWidget {
       width: 342,
       height: 345,
       decoration: BoxDecoration(
-          color: Color(0xfffde9bd), borderRadius: BorderRadius.circular(20)),
+          color: Colors.grey[400], borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -86,7 +86,7 @@ class TextformWidget extends StatelessWidget {
             width: double.maxFinite,
             height: 50,
             decoration: BoxDecoration(
-                color: Color.fromARGB(255, 202, 31, 31),
+                color: Color(0xffBF1522),
                 borderRadius: BorderRadius.circular(10)),
           ),
           Padding(
@@ -101,7 +101,7 @@ class TextformWidget extends StatelessWidget {
                   },
                   child: Text(
                     " Sign up",
-                    style: TextStyle(color: Color(0xffF04C29)),
+                    style: TextStyle(color: Color(0xffBF1522)),
                   ),
                 )
               ],

@@ -11,7 +11,7 @@ class ForgotpassTextformfieldWidget extends StatelessWidget {
       width: 342,
       height: 345,
       decoration: BoxDecoration(
-          color: Color(0xfffde9bd), borderRadius: BorderRadius.circular(20)),
+          color: Colors.grey[400], borderRadius: BorderRadius.circular(20)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

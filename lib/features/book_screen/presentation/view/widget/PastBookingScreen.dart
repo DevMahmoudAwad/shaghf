@@ -32,14 +32,14 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Training Room", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Color(0xff111111),),),
+                          Text("Flutter Course", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Color(0xff111111),),),
                           SizedBox(height: 18,),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.calendar_month,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.calendar_month,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("Date", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -53,7 +53,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.watch_later,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.watch_later,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("Time", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -67,7 +67,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.event_seat,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.event_seat,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text(" Seats", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -81,7 +81,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.attach_money,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.attach_money,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("Deposit", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -95,7 +95,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.attach_money,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.attach_money,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("The rest of the money", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -109,7 +109,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.coffee,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.coffee,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("Coffee", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -122,7 +122,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("Booking Status", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
-                              Text("Paid", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Color(0xffF04C29),),),
+                              Text("Paid", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Color(0xffBF1522),),),
                             ],
                           ),
                         ],
@@ -133,14 +133,14 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Meeting Room", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Color(0xff111111),),),
+                          Text("UI UX Course", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Color(0xff111111),),),
                           SizedBox(height: 18,),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.calendar_month,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.calendar_month,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("Date", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -154,7 +154,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.watch_later,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.watch_later,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("Time", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -168,7 +168,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.event_seat,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.event_seat,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text(" Seats", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -182,7 +182,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.attach_money,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.attach_money,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("Deposit", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -196,7 +196,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.attach_money,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.attach_money,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("The rest of the money", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -210,7 +210,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.coffee,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.coffee,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("Coffee", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -226,14 +226,14 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Funny Room", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Color(0xff111111),),),
+                          Text("Full Stack Course", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Color(0xff111111),),),
                           SizedBox(height: 18,),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.calendar_month,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.calendar_month,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("Date", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -247,7 +247,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.watch_later,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.watch_later,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("Time", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -261,7 +261,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.event_seat,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.event_seat,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text(" Seats", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -275,7 +275,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.attach_money,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.attach_money,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("Deposit", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -289,7 +289,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.attach_money,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.attach_money,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("The rest of the money", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],
@@ -303,7 +303,7 @@ class _PastBookingScreenState extends State<PastBookingScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Icon(Icons.coffee,size: 16,color: Color(0xffF04C29),),
+                                  Icon(Icons.coffee,size: 16,color: Color(0xffBF1522),),
                                   SizedBox(width: 1.5,),
                                   Text("Coffee", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff262626),),),
                                 ],

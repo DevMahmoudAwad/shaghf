@@ -22,33 +22,67 @@ class HomeButtonNavigationWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          IconButton(
-            onPressed: () {
-              GoRouter.of(context).push(AppRouter.KHomePage);
-            },
-            icon: Image.asset("images/image14.png", width: 30, height: 40),
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              IconButton(
+                onPressed: () {
+                  GoRouter.of(context).push(AppRouter.KHomePage);
+                },
+                icon: Icon(Icons.home_outlined, size: 25, color: Colors.black),
+              ),
+              Text('Home', style: TextStyle(fontSize: 12, color: Colors.black)),
+            ],
           ),
-          IconButton(
-            onPressed: () {
-              GoRouter.of(context).push(AppRouter.KBookHistoryScreen);
-            },
-            icon: Image.asset("images/image15.png", width: 30, height: 40),
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              IconButton(
+                onPressed: () {
+                  GoRouter.of(context).push(AppRouter.KBookHistoryScreen);
+                },
+                icon: Icon(Icons.bookmark_add_outlined, size: 25, color: Colors.black),
+              ),
+              Text('Book', style: TextStyle(fontSize: 12, color: Colors.black)),
+            ],
           ),
           IconButton(
             onPressed: () {},
-            icon: Image.asset("images/tsquare.jpg", width: 52, height: 52),
+            icon: Container(
+              width: 52,
+              height: 52,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                  image: AssetImage("images/tsquare.jpg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
           ),
-          IconButton(
-            onPressed: () {
-               GoRouter.of(context).push(AppRouter.OffersScroll);
-            },
-            icon: Image.asset("images/image16.png", width: 30, height: 40),
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              IconButton(
+                onPressed: () {
+                  GoRouter.of(context).push(AppRouter.OffersScroll);
+                },
+                icon: Icon(Icons.local_offer_sharp, size: 25, color: Colors.black),
+              ),
+              Text('Offers', style: TextStyle(fontSize: 12, color: Colors.black)),
+            ],
           ),
-          IconButton(
-            onPressed: () {
-              GoRouter.of(context).push(AppRouter.KSettingPage);
-            },
-            icon: Image.asset("images/image17.png", width: 30, height: 40),
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              IconButton(
+                onPressed: () {
+                  GoRouter.of(context).push(AppRouter.KSettingPage);
+                },
+                icon: Icon(Icons.menu, size: 25, color: Colors.black),
+              ),
+              Text('Menu', style: TextStyle(fontSize: 12, color: Colors.black)),
+            ],
           ),
         ],
       ),
