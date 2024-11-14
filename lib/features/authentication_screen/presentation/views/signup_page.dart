@@ -7,36 +7,43 @@ class SignupPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final screenHeight = MediaQuery.of(context).size.height;
+
     return Scaffold(
-        body: Column(
-      children: [
-        Row(
+      body: SingleChildScrollView( // للتأكد من إمكانية التمرير على الشاشات الصغيرة
+        child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 24, top: 16),
-              child: IconButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  icon: Image.asset(
-                    "images/image3.png",
-                    width: 24,
-                    height: 24,
-                  )),
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(
+                      left: screenWidth * 0.05, top: screenHeight * 0.02),
+                  child: IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: Image.asset(
+                      "images/image3.png",
+                      width: screenWidth * 0.06,
+                      height: screenHeight * 0.04,
+                    ),
+                  ),
+                ),
+              ],
             ),
+            SizedBox(height: screenHeight * 0.02), // فراغ ديناميكي
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ImageWidget(), // Assuming ImageWidget handles responsive image sizing
+              ],
+            ),
+            SizedBox(height: screenHeight * 0.04),
+            SignupTextformfieldWidget(), // نموذج تسجيل الدخول
           ],
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ImageWidget(),
-          ],
-        ),
-        SizedBox(
-          height: 32,
-        ),
-        SignupTextformfieldWidget(),
-      ],
-    ));
+      ),
+    );
   }
 }

@@ -9,36 +9,42 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final screenHeight = MediaQuery.of(context).size.height;
+
     return Scaffold(
-      body: Column(
-        children: [
-          Row(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.05),
+          child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 24, top: 16),
-                child: IconButton(
+              SizedBox(height: screenHeight * 0.05), // فراغ علوي ديناميكي
+              Row(
+                children: [
+                  IconButton(
                     onPressed: () {
                       GoRouter.of(context).push(AppRouter.KHomePage);
                     },
                     icon: Image.asset(
                       "images/image3.png",
-                      width: 24,
-                      height: 24,
-                    )),
+                      width: screenWidth * 0.06,
+                      height: screenHeight * 0.04,
+                    ),
+                  ),
+                ],
               ),
+              SizedBox(height: screenHeight * 0.02), // فراغ ديناميكي
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ImageWidget(),
+                ],
+              ),
+              SizedBox(height: screenHeight * 0.04),
+              const TextformWidget(), // فورم تسجيل الدخول
             ],
           ),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ImageWidget(),
-            ],
-          ),
-          const SizedBox(
-            height: 32,
-          ),
-          const TextformWidget(),
-        ],
+        ),
       ),
     );
   }
