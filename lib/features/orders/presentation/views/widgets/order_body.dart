@@ -54,7 +54,7 @@ class _OrderBodyState extends State<OrderBody> {
                 const SizedBox(height: 20),
                 Text(
                   selectedCategory,
-                  style: Styles.textStyle16.copyWith(color: KredColor),
+                  style: Styles.textStyle16.copyWith(color: KColor),
                 ),
                 ...buildItemsForCategory(selectedCategory),
               ],
@@ -64,7 +64,7 @@ class _OrderBodyState extends State<OrderBody> {
             padding: const EdgeInsets.only(bottom: 32),
             child: TextButton(
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(KgreenColor),
+                backgroundColor: MaterialStateProperty.all(KColor),
                 shape: MaterialStateProperty.all(
                   RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
