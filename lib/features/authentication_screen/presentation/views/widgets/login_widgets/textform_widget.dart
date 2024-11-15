@@ -86,7 +86,7 @@ class TextformWidget extends StatelessWidget {
                 "LOGIN",
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: screenWidth * 0.04, // حجم النص نسبة من العرض
+                  fontSize: screenWidth * 0.04,
                   fontWeight: FontWeight.w500,
                 ),
               ),
